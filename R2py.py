@@ -7,6 +7,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 
+# IF NO SKLEARN, DO "!pip install scikit-learn"
+
 # Example dataset (med.events equivalent)
 tidy = med_events.copy()
 tidy.columns = ["pnr", "eksd", "perday", "ATC", "dur_original"]
